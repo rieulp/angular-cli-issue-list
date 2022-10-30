@@ -27,7 +27,6 @@ const PER_PAGE = 20;
 export const IssueContext = createContext<IssueContext>({
   isEnd: false,
   isLoading: false
-  // details: new Map<number, IIssueDetail>()
 });
 
 const IssueContextProvider = ({ children }: Props) => {
@@ -146,7 +145,6 @@ const IssueContextProvider = ({ children }: Props) => {
     issues,
     setIssues,
     loadMore,
-    // details,
     getDetailData
   };
 

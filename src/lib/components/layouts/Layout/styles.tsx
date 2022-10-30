@@ -7,6 +7,6 @@ export const LayoutWrapper = styled.div`
 export const LayoutContentWrapper = styled.div`
   max-width: 1280px;
   padding: 1rem;
-  min-height: calc(100vh - 182px);
+  min-height: calc(100vh - 150px);
   margin: 0 auto;
 `;
