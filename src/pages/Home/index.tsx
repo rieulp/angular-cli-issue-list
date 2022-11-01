@@ -1,6 +1,6 @@
 // import IssueItem from "@/components/IssueItem";
 import IssueList from '@/components/IssueList';
-import useIssueList from '@/lib/hooks/useIssueList';
+import useIssueList from '@/hooks/useIssueList';
 import { useCallback, useEffect } from 'react';
 let timeoutId: NodeJS.Timeout;
 

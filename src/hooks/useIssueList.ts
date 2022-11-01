@@ -1,4 +1,4 @@
-import { IssueContext } from '@/lib/store/IssueContextProvider';
+import { IssueContext } from '@/store/IssueContextProvider';
 import { useContext } from 'react';
 
 export interface IUser {

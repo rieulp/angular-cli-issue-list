@@ -1,5 +1,5 @@
-import type { IIssue } from '@/lib/hooks/useIssueList';
-import React, { useMemo, memo } from 'react';
+import type { IIssue } from '@/hooks/useIssueList';
+import { useMemo, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { IssueComments, IssueTitleWrapper, IssueWrapper } from './styles';
 import { GoComment } from 'react-icons/go';

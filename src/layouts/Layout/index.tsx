@@ -1,6 +1,6 @@
-import Footer from '../Footer';
-import Header from '../Header';
-import MoveTopButton from '../MoveTopButton';
+import Footer from '@/layouts/Footer';
+import Header from '@/layouts/Header';
+import MoveTopButton from '@/layouts/MoveTopButton';
 import { LayoutContentWrapper, LayoutWrapper } from './styles';
 
 interface Props {

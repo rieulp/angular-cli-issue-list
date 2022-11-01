@@ -1,4 +1,4 @@
-import theme from '@/lib/styles/theme';
+import theme from '@/styles/theme';
 import styled from 'styled-components';
 
 export const LayoutWrapper = styled.div`
