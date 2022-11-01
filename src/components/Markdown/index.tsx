@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
-import CodeBlock from '@/lib/components/CodeBlock';
+import CodeBlock from '@/components/CodeBlock';
 import {
   A,
   BlockQuote,
