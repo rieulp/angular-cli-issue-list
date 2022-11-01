@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HeaderWrapper } from "./styles";
 
 interface Props {
@@ -7,7 +8,9 @@ interface Props {
 const Header = ({ children }: Props) => {
   return (
     <HeaderWrapper>
-      <h1 className="title">{children}</h1>
+      <Link to="/">
+        <h1 className="title">{children}</h1>
+      </Link>
     </HeaderWrapper>
   );
 };

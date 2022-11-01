@@ -6,7 +6,7 @@ const Footer = () => {
       <p className="made-by">
         Made by <GoMarkGithub />{" "}
         <a href="https://github.com/rieulp" target="_blank" rel="noreferrer">
-          Team 4
+          Rieul
         </a>
       </p>
     </FooterWrapper>
