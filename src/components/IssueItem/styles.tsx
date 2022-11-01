@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import theme from '@/lib/styles/theme';
+import theme from '@/styles/theme';
 
 export const IssueWrapper = styled.li`
   border-top: 1px solid #d8dee4;
