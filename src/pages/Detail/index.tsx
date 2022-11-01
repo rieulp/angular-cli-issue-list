@@ -1,15 +1,14 @@
 import LoadingBar from '@/components/LoadingBar';
 import Markdown from '@/components/Markdown';
-import useIssue from '@/lib/hooks/useIssue';
-import { useEffect, useMemo, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import useIssue from '@/hooks/useIssue';
+import { useMemo } from 'react';
+import { Navigate, useParams } from 'react-router-dom';
 import { ContentWrapper, TitleWrapper, UserWrapper } from './styles';
-import { GoComment } from 'react-icons/go';
 
 const Detail = () => {
   const { id } = useParams();
   if (!id) return <div>데이터 없음</div>;
-  const { issue } = useIssue(id);
+  const { issue, error } = useIssue(id);
 
   const dateString = useMemo(() => {
     if (!issue) return '';
@@ -18,7 +17,7 @@ const Detail = () => {
       date.getMonth() + 1
     }월 ${date.getDate()}일`;
   }, [issue]);
-
+  if (error) return <Navigate to="/notfound" replace />;
   if (!issue) return <LoadingBar />;
   return (
     <div>
