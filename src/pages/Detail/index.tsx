@@ -1,10 +1,10 @@
-import LoadingBar from "@/lib/components/LoadingBar";
-import Markdown from "@/lib/components/Markdown";
-import useIssue from "@/lib/hooks/useIssue";
-import { useEffect, useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
-import { ContentWrapper, TitleWrapper, UserWrapper } from "./styles";
-import { GoComment } from "react-icons/go";
+import LoadingBar from '@/lib/components/LoadingBar';
+import Markdown from '@/lib/components/Markdown';
+import useIssue from '@/lib/hooks/useIssue';
+import { useEffect, useMemo, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { ContentWrapper, TitleWrapper, UserWrapper } from './styles';
+import { GoComment } from 'react-icons/go';
 
 const Detail = () => {
   const { id } = useParams();
@@ -12,7 +12,7 @@ const Detail = () => {
   const { issue } = useIssue(id);
 
   const dateString = useMemo(() => {
-    if (!issue) return "";
+    if (!issue) return '';
     const date = new Date(issue.created_at);
     return `${date.getFullYear()}년 ${
       date.getMonth() + 1
@@ -51,7 +51,7 @@ const Detail = () => {
         </div>
       </TitleWrapper>
       <ContentWrapper>
-        <Markdown content={issue.body || ""} />
+        <Markdown content={issue.body || ''} />
       </ContentWrapper>
     </div>
   );

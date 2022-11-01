@@ -1,14 +1,14 @@
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
-import CodeBlock from "@/lib/components/CodeBlock";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+import CodeBlock from '@/lib/components/CodeBlock';
 import {
   A,
   BlockQuote,
   ContainsTaskList,
   MarkdownWrapper,
-  Table
-} from "./styles";
+  Table,
+} from './styles';
 
 interface Props {
   content: string;
@@ -31,7 +31,7 @@ const Markdown = ({ content }: Props) => {
             return <Table>{children}</Table>;
           },
           ul({ children, className }) {
-            return className?.includes("contains-task-list") ? (
+            return className?.includes('contains-task-list') ? (
               <ContainsTaskList>{children}</ContainsTaskList>
             ) : (
               <ul className={className}>{children}</ul>
@@ -43,7 +43,7 @@ const Markdown = ({ content }: Props) => {
                 {children}
               </A>
             );
-          }
+          },
         }}
       >
         {content}

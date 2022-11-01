@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { HeaderWrapper } from "./styles";
+import { Link } from 'react-router-dom';
+import { HeaderWrapper } from './styles';
 
 interface Props {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
 /* prettier-ignore */
 
 import {createGlobalStyle} from "styled-components"
-import Reset from "./Reset";
+import Reset from './Reset';
 
 const GlobalStyle = createGlobalStyle`
 

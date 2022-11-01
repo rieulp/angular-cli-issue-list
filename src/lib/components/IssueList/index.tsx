@@ -1,7 +1,7 @@
-import { IssueContext } from "@/lib/store/IssueContextProvider";
-import AdImage from "../AdImage";
-import IssueItem from "../IssueItem";
-import LoadingBar from "../LoadingBar";
+import { IssueContext } from '@/lib/store/IssueContextProvider';
+import AdImage from '../AdImage';
+import IssueItem from '../IssueItem';
+import LoadingBar from '../LoadingBar';
 
 const IssueList = () => {
   return (

@@ -1,10 +1,10 @@
-import type { CodeProps } from "react-markdown/lib/ast-to-react";
-import { BiCopy } from "react-icons/bi";
-import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import dracula from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
+import type { CodeProps } from 'react-markdown/lib/ast-to-react';
+import { BiCopy } from 'react-icons/bi';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import dracula from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
 
-import React from "react";
-import { CodeBlockWrapper, InlineCodeWrapper } from "./styles";
+import React from 'react';
+import { CodeBlockWrapper, InlineCodeWrapper } from './styles';
 
 const CodeBlock = ({
   node,
@@ -13,7 +13,7 @@ const CodeBlock = ({
   children,
   ...props
 }: CodeProps) => {
-  const match = /language-(\w+)/.exec(className || "");
+  const match = /language-(\w+)/.exec(className || '');
   return !inline && match ? (
     <CodeBlockWrapper>
       <button
@@ -30,7 +30,7 @@ const CodeBlock = ({
         PreTag="div"
         style={dracula}
       >
-        {String(children).replace(/\n$/, "")}
+        {String(children).replace(/\n$/, '')}
       </SyntaxHighlighter>
     </CodeBlockWrapper>
   ) : (

@@ -1,4 +1,4 @@
-import { NotFoundWrapper } from "./styles";
+import { NotFoundWrapper } from './styles';
 
 const NotFound = () => {
   return (

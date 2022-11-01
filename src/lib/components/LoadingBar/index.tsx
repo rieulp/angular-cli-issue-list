@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { GoSync } from "react-icons/go";
+import styled, { keyframes } from 'styled-components';
+import { GoSync } from 'react-icons/go';
 
 const rotateAnim = keyframes`
     0% {

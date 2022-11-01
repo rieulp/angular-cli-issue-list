@@ -1,8 +1,8 @@
-import type { IIssue } from "@/lib/hooks/useIssueList";
-import React, { useMemo, memo } from "react";
-import { Link } from "react-router-dom";
-import { IssueComments, IssueTitleWrapper, IssueWrapper } from "./styles";
-import { GoComment } from "react-icons/go";
+import type { IIssue } from '@/lib/hooks/useIssueList';
+import React, { useMemo, memo } from 'react';
+import { Link } from 'react-router-dom';
+import { IssueComments, IssueTitleWrapper, IssueWrapper } from './styles';
+import { GoComment } from 'react-icons/go';
 
 const IssueItem = ({ title, comments, created_at, number, author }: IIssue) => {
   const dateString = useMemo(() => {

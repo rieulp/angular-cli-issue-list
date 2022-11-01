@@ -1,7 +1,7 @@
-import { octokit } from "@/lib/api/octokit";
-import { IIssue } from "@/lib/hooks/useIssueList";
-import { useCallback, useEffect } from "react";
-import { createContext, useState } from "react";
+import { octokit } from '@/lib/api/octokit';
+import { IIssue } from '@/lib/hooks/useIssueList';
+import { useCallback, useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export interface IIssueDetail extends IIssue {
   author_url: string; // 작성자
@@ -26,7 +26,7 @@ const PER_PAGE = 20;
 
 export const IssueContext = createContext<IssueContext>({
   isEnd: false,
-  isLoading: false
+  isLoading: false,
 });
 
 const IssueContextProvider = ({ children }: Props) => {
@@ -43,12 +43,12 @@ const IssueContextProvider = ({ children }: Props) => {
       setLoading(true);
       await octokit.rest.issues
         .listForRepo({
-          owner: "angular",
-          repo: "angular-cli",
+          owner: 'angular',
+          repo: 'angular-cli',
           per_page: PER_PAGE,
           page: page + 1,
-          state: "open",
-          sort: "comments"
+          state: 'open',
+          sort: 'comments',
         })
         .then((res) => {
           if (res.status === 200) {
@@ -64,10 +64,10 @@ const IssueContextProvider = ({ children }: Props) => {
                       number,
                       comments,
                       created_at,
-                      author: login
+                      author: login,
                     });
                   }
-                }
+                },
               );
 
               setIssues((prev) => {
@@ -94,9 +94,9 @@ const IssueContextProvider = ({ children }: Props) => {
     if (!details.has(issue_number)) {
       await octokit.rest.issues
         .get({
-          owner: "angular",
-          repo: "angular-cli",
-          issue_number: parseInt(issue_number, 10)
+          owner: 'angular',
+          repo: 'angular-cli',
+          issue_number: parseInt(issue_number, 10),
         })
         .then((res) => {
           if (res.status === 200) {
@@ -112,7 +112,7 @@ const IssueContextProvider = ({ children }: Props) => {
                 login,
                 created_at,
                 comments,
-                body
+                body,
               });
 
               details.set(issue_number, {
@@ -122,7 +122,7 @@ const IssueContextProvider = ({ children }: Props) => {
                 comments,
                 created_at,
                 number: number,
-                title
+                title,
               });
               return details.get(issue_number);
             }
@@ -145,7 +145,7 @@ const IssueContextProvider = ({ children }: Props) => {
     issues,
     setIssues,
     loadMore,
-    getDetailData
+    getDetailData,
   };
 
   return (

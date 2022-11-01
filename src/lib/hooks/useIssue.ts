@@ -1,5 +1,5 @@
-import { IIssueDetail, IssueContext } from "@/lib/store/IssueContextProvider";
-import { useContext, useEffect, useState } from "react";
+import { IIssueDetail, IssueContext } from '@/lib/store/IssueContextProvider';
+import { useContext, useEffect, useState } from 'react';
 
 const useIssue = (issue_number: string) => {
   const [issue, setIssue] = useState<IIssueDetail>();

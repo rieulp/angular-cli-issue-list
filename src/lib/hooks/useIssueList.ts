@@ -1,5 +1,5 @@
-import { IssueContext } from "@/lib/store/IssueContextProvider";
-import { useContext } from "react";
+import { IssueContext } from '@/lib/store/IssueContextProvider';
+import { useContext } from 'react';
 
 export interface IUser {
   avatar_url: string;

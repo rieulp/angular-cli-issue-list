@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const MarkdownStyle = css`
   -ms-text-size-adjust: 100%;
@@ -6,8 +6,8 @@ export const MarkdownStyle = css`
   margin: 0;
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -26,7 +26,7 @@ export const MarkdownStyle = css`
   & h6:hover .anchor .octicon-link:before {
     width: 16px;
     height: 16px;
-    content: " ";
+    content: ' ';
     display: inline-block;
     background-color: currentColor;
     -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
@@ -145,43 +145,43 @@ export const MarkdownStyle = css`
     line-height: inherit;
   }
 
-  & [type="button"],
-  & [type="reset"],
-  & [type="submit"] {
+  & [type='button'],
+  & [type='reset'],
+  & [type='submit'] {
     -webkit-appearance: button;
   }
 
-  & [type="button"]::-moz-focus-inner,
-  & [type="reset"]::-moz-focus-inner,
-  & [type="submit"]::-moz-focus-inner {
+  & [type='button']::-moz-focus-inner,
+  & [type='reset']::-moz-focus-inner,
+  & [type='submit']::-moz-focus-inner {
     border-style: none;
     padding: 0;
   }
 
-  & [type="button"]:-moz-focusring,
-  & [type="reset"]:-moz-focusring,
-  & [type="submit"]:-moz-focusring {
+  & [type='button']:-moz-focusring,
+  & [type='reset']:-moz-focusring,
+  & [type='submit']:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
 
-  & [type="checkbox"],
-  & [type="radio"] {
+  & [type='checkbox'],
+  & [type='radio'] {
     box-sizing: border-box;
     padding: 0;
   }
 
-  & [type="number"]::-webkit-inner-spin-button,
-  & [type="number"]::-webkit-outer-spin-button {
+  & [type='number']::-webkit-inner-spin-button,
+  & [type='number']::-webkit-outer-spin-button {
     height: auto;
   }
 
-  & [type="search"] {
+  & [type='search'] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
   }
 
-  & [type="search"]::-webkit-search-cancel-button,
-  & [type="search"]::-webkit-search-decoration {
+  & [type='search']::-webkit-search-cancel-button,
+  & [type='search']::-webkit-search-decoration {
     -webkit-appearance: none;
   }
 
@@ -201,13 +201,13 @@ export const MarkdownStyle = css`
 
   & hr::before {
     display: table;
-    content: "";
+    content: '';
   }
 
   & hr::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 
   & table {
@@ -482,7 +482,7 @@ export const MarkdownStyle = css`
   }
 
   & g-emoji {
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 1em;
     font-style: normal !important;
     font-weight: 400;
@@ -497,13 +497,13 @@ export const MarkdownStyle = css`
 
   &::before {
     display: table;
-    content: "";
+    content: '';
   }
 
   &::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 
   & > *:first-child {
@@ -555,11 +555,11 @@ export const MarkdownStyle = css`
   }
 
   & sup > a::before {
-    content: "[";
+    content: '[';
   }
 
   & sup > a::after {
-    content: "]";
+    content: ']';
   }
 
   & h1 .octicon-link,
@@ -613,15 +613,15 @@ export const MarkdownStyle = css`
     list-style-type: none;
   }
 
-  & ol[type="1"] {
+  & ol[type='1'] {
     list-style-type: decimal;
   }
 
-  & ol[type="a"] {
+  & ol[type='a'] {
     list-style-type: lower-alpha;
   }
 
-  & ol[type="i"] {
+  & ol[type='i'] {
     list-style-type: lower-roman;
   }
 
@@ -685,11 +685,11 @@ export const MarkdownStyle = css`
     background-color: transparent;
   }
 
-  & img[align="right"] {
+  & img[align='right'] {
     padding-left: 20px;
   }
 
-  & img[align="left"] {
+  & img[align='left'] {
     padding-right: 20px;
   }
 
@@ -898,7 +898,7 @@ export const MarkdownStyle = css`
     bottom: -8px;
     left: -24px;
     pointer-events: none;
-    content: "";
+    content: '';
     border: 2px solid var(--color-accent-emphasis);
     border-radius: 6px;
   }
