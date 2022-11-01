@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { GoSync } from "react-icons/go";
+import styled, { keyframes } from 'styled-components';
+import { GoSync } from 'react-icons/go';
 
 const rotateAnim = keyframes`
     0% {
@@ -19,6 +19,10 @@ const LoadingBarWrapper = styled.div`
   padding: 1rem;
   font-size: 32px;
   text-align: center;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  color: #484848;
   & .icon {
     animation: ${rotateAnim} 1s infinite linear;
   }

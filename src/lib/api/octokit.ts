@@ -1,6 +1,6 @@
-import { Octokit } from "@octokit/rest";
+import { Octokit } from '@octokit/rest';
 
 export const octokit = new Octokit({
   auth: process.env.REACT_APP_GH,
-  userAgent: "rieul-app v1"
+  userAgent: 'rieul-app v1',
 });

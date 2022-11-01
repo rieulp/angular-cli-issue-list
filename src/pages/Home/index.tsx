@@ -1,7 +1,7 @@
 // import IssueItem from "@/components/IssueItem";
-import IssueList from "@/lib/components/IssueList";
-import useIssueList from "@/lib/hooks/useIssueList";
-import { useCallback, useEffect } from "react";
+import IssueList from '@/lib/components/IssueList';
+import useIssueList from '@/lib/hooks/useIssueList';
+import { useCallback, useEffect } from 'react';
 let timeoutId: NodeJS.Timeout;
 
 const Home = () => {
@@ -23,9 +23,9 @@ const Home = () => {
   }, [isEnd, isLoading, timeoutId, loadMore]);
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
     return () => {
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener('scroll', onScroll);
     };
   }, []);
   return (

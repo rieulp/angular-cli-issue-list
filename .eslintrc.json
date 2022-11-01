@@ -28,7 +28,6 @@
     "eqeqeq": "error",
     "dot-notation": "warn",
     "no-unused-vars": "off",
-    "quotes": ["error", "double"],
     "prettier/prettier": [
       "error",
       {

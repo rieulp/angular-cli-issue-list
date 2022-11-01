@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CodeBlockWrapper = styled.div`
   position: relative;
@@ -37,6 +37,6 @@ export const InlineCodeWrapper = styled.code`
   border-radius: 3px;
   font-size: 85%;
   padding: 0.2em 0.4em;
-  font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono",
+  font-family: 'SFMono-Regular', Menlo, Consolas, 'PT Mono', 'Liberation Mono',
     Courier, monospace;
 `;
