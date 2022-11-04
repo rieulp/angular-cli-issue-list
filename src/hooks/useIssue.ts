@@ -1,13 +1,13 @@
 import { IIssueDetail, IssueContext } from '@/store/IssueContextProvider';
 import { useContext, useEffect, useState } from 'react';
 
-const useIssue = (issue_number: string) => {
+const useIssue = (issue_number?: string) => {
   const [issue, setIssue] = useState<IIssueDetail>();
   const [error, setError] = useState<Error>();
   const { getDetailData } = useContext(IssueContext);
 
   useEffect(() => {
-    getDetailData?.(issue_number)
+    getDetailData?.(issue_number || '0')
       .then((value) => {
         if (value) setIssue(value);
       })
