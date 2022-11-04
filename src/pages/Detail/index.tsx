@@ -2,14 +2,15 @@ import LoadingBar from '@/components/LoadingBar';
 import Markdown from '@/components/Markdown';
 import useIssue from '@/hooks/useIssue';
 import { useMemo } from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { ContentWrapper, TitleWrapper, UserWrapper } from './styles';
 
 const Detail = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
-  if (!id) return <div>데이터 없음</div>;
-  const { issue, error } = useIssue(id);
+  if (!id) navigate('/');
 
+  const { issue, error } = useIssue(id);
   const dateString = useMemo(() => {
     if (!issue) return '';
     const date = new Date(issue.created_at);
